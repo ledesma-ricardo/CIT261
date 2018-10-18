@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#000000;
+  background-color:#ADD8E6;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.testingBlock {
+	 width: 400px;
+	 margin: auto;
+	 border: 3px solid #000000;
+	 padding-right: 10px;
+	 padding-left: 10px;
+	 padding-bottom: 15px;
+}
+
+.appButton {
+	position: relative;
+	padding: 10px 30px;
+	margin: 0px 10px 10px 0px;
+	font-size: 25px;
+	border-radius: 10px;
+	border-bottom: 5px solid #2980B9;
+}
+.appButton:active {
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;}
+    
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+.tg td {
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+    }
+.tg th {
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+    }
+.tg .tg-jew0 {
+    font-weight:bold;
+    background-color:#fd6864;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top;
+    }
+.tg .tg-0lax {
+    text-align:left;
+    vertical-align:top;
+}    
+
