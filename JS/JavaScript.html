@@ -14,11 +14,15 @@
 	    <h4>In this page I'll cover the following topic of JavaScript: Loops, Conditional Statements, Functions, Variables, Parameters and Arrays.</h4>
 
     <section>
-  <h2>VARIABLES</h2>
-  <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence. But one special thing about variables is that their contained values can change.</p>
-    
-    <h4>Example:</h4>
-    <p>In this example when you press the button, it will call a function. The first line of the function will pops a box up on the screen that asks you to enter your name and stores the value in a variable. The second line pops a welcome message that includes your name, taken from the variable value.</p> 
+     <h2>VARIABLES</h2>
+      <h4>Example:</h4>
+    <p>
+        function greetings(){
+                var name= prompt("What is your name?");
+                 alert("Hello " + name + ", nice to see you!");
+            }
+                
+        In this example when you press the button, it will call a function. The first line of the function will pops a box up on the screen that asks you to enter your name and stores the value in a variable. The second line displays a welcome message that includes your name, taken from the variable value. Her</p> 
         
         <button onclick="greetings()">Test me</button>
         <p id="jsvariable"></p>
