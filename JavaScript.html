@@ -7,6 +7,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="JavaScript.js"></script>
 	</head>
 
 	<body>
@@ -28,17 +29,10 @@
          &lt;/script&gt;
         </pre>
         
-        <button onclick="greetings()">Test me</button>
+        <button  class="myButton" onclick="greetings()">Test me</button>
         <p id="jsvariable"></p>
          
-        <script type="text/javascript">
-                function greetings(){
-                var name= prompt("What is your name?");
-                 alert("Hello " + name + ", nice to see you!");
-            }
-             
-        </script>
-
+       
     <h2>ARRAYS</h2>
         <h4>Example 1:</h4>
         <p>In this example I created an arrays called "month" with the name of the months. If you click the button, a function will be called that display all values in the array month.</p>
@@ -56,36 +50,8 @@
          &lt;/script&gt;
         </pre>
         
-        <button onclick="displayarray()">Display values</button>
+        <button  class="myButton" onclick="displayarray()">Display values</button>
         <p id="jsarrays"></p>
-        
-        <script type="text/javascript">
-                var month = new Array();
-                month[0] = "January";
-                month[1] = "February";
-                month[2] = "March";
-                month[3] = "April";
-                month[4] = "May";
-                month[5] = "June";
-                month[6] = "July";
-                month[7] = "August";
-                month[8] = "September";
-                month[9] = "October";
-                month[10] = "November";
-                month[11] = "December";
-
-            function datemonth() {
-
-                var d = new Date();
-                var m = month[d.getMonth()];
-                alert(m);
-            }
-
-            function displayarray() {
-
-                alert(Object.values(month));
-            }
-        </script>
         
         <h4>Example 2:</h4>
         <p>In this example I use the getMonth() method to returns the month (from 0 to 11) for the specified date, according to local time and then store it in a variable, later match this value with the month array. As result it display the name of current month.</p>
@@ -99,7 +65,7 @@
          &lt;/script&gt;
         </pre>
         
-        <button onclick="datemonth()">Display Current Month</button>
+        <button  class="myButton" onclick="datemonth()">Display Current Month</button>
         <p id="jsarrays1"></p>
         
         <h2>Conditional Statements</h2>
@@ -120,18 +86,7 @@
          &lt;/script&gt;
         </pre>
         
-        <button onclick="age()">Give us your Age</button>
-        
-            <script type="text/javascript">
-            function age() {
-              var age = prompt("Please enter your age?");
-		      
-              if (age >= 18) {
-		      		alert("You are an adult");} 
-              else{
-              		alert("You are NOT an adult");}
-               }
-            </script>
+        <button  class="myButton" onclick="age()">Give us your Age</button>
         
         <h3>Switch Statement Example:</h3>
         <p> This example uses the getDay() method returns the weekday as a number between 0 and 6 then uses the weekday number to calculate the weekday name and pops a message with the weekday name. Below is the code used.</p>
@@ -158,29 +113,8 @@
          &lt;/script&gt;
         </pre>
                 
-        <button onclick="DayName()">Display current day</button>
+        <button  class="myButton" onclick="DayName()">Display current day</button>
             
-        <script type="text/javascript">
-            function DayName(){
-            switch (new Date().getDay()) 
-              { case 0: day = "Sunday";
-                    break;
-                case 1: day = "Monday";
-                    break;
-                case 2: day = "Tuesday";
-                    break;
-                case 3: day = "Wednesday";
-                    break;
-                case 4: day = "Thursday";
-                    break;
-                case 5: day = "Friday";
-                    break;
-                case 6: day = "Saturday"; }
-            
-                alert("Today is " + day); }
-            </script>
-        
-        
         <h2>Loops</h2>
         <h4>For Loop Example:</h4>
         <p>In this example I used a for loop statement to show all my classmates names that are store in array. Below is the code used.</p>
@@ -197,20 +131,9 @@
              &lt;/script&gt;
             </pre>
         
-        <button onclick="ClassmatesForLoop()">Display ClassMates Names</button>
+        <button  class="myButton" onclick="ClassmatesForLoop()">Display ClassMates Names</button>
         <p id="MatesNames"></p>
 
-            <script type="text/javascript">
-            function ClassmatesForLoop() {
-                var names = ["Elias", "Marcelo", "Vanessa", "Jean", "Alfredo", "Carlos"];
-                var classMate = "";
-                for (var i = 0; i < names.length; i++) {
-                    classMate += names[i] + "<br>";
-                }
-                    document.getElementById("MatesNames").innerHTML = classMate;
-                }
-            </script>  
-        
         <h4>While Loop Example:</h4>
         <p>In this example I used a While loop statement to show all my classmates names that are store in array. Below is the code used.</p>
             <pre>
@@ -227,22 +150,9 @@
              &lt;/script&gt;
             </pre>
         
-        <button onclick="ClassmatesWhileLoop()">Display ClassMates Names</button>
+        <button  class="myButton" onclick="ClassmatesWhileLoop()">Display ClassMates Names</button>
         <p id="MatesNames_while"></p>
 
-            <script type="text/javascript">
-            function ClassmatesWhileLoop() {
-                var names = ["Elias", "Marcelo", "Vanessa", "Jean", "Alfredo", "Carlos"];
-                var i = 0;
-                var classMate = "";
-                while (names[i]){
-                    classMate += names[i] + "<br>";
-                    i++;
-                }
-                    document.getElementById("MatesNames_while").innerHTML = classMate;
-                }
-            </script> 
-       
         <h2>Functions</h2>
             <h4>Example:</h4>
             <p>In this example I use two JS functions to generate random passwords, if you click the button it will show the generated password that meet with most complexity policies. Below is the code used.</p>
@@ -271,28 +181,12 @@
                      <td>Password:</td>
                      <td>
                          <input name="row_pass" type="text" size="40">&nbsp;
-                         <input type="button" class="button" value="Generate Password" onClick="generatePass();" tabindex="2">
+                         <input  class="myButton" type="button" class="button" value="Generate Password" onClick="generatePass();" tabindex="2">
                      </td>
                     </tr>
                 </table>
                 </form>
         
-        <script type="text/javascript">
-            function randomPass(length) {
-                var char = "oscvtesbwd!@#$%^*()-+PLKMNYRWBCF1981";
-                var pass = "";
-                for (var x = 0; x < length; x++) {
-                    var i = Math.floor(Math.random() * char.length);
-                    pass += char.charAt(i);
-                }
-                return pass;
-            }
-
-            function generatePass() {
-                passform.row_pass.value = randomPass(passform.length.value);
-            }
-        
-      </script>  
                 
 </section>
     
