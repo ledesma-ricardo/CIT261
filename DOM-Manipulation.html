@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+    
+    
+        <script type="text/javascript">
+            function start(){
+		document.getElementById('addPlayer').innerHTML = "Select Players";
+				var bugsBunny = document.createElement("button");
+					var t = document.createTextNode("Bugs Bunny");
+					bugsBunny.appendChild(t);
+					bugsBunny.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Bugs Bunny");
+                    newItem.appendChild(textnode);
+					var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+		
+                var daffyDuck = document.createElement("input");
+                    daffyDuck.type = "button";
+                    daffyDuck.value = "Daffy Duck";
+                    daffyDuck.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Daffy Duck");
+                    newItem.appendChild(textnode);
+					var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+		
+                var yosemiteSam = document.createElement("input");
+                    yosemiteSam.type = "button";
+                    yosemiteSam.value = "Yosemite Sam";
+                    yosemiteSam.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Yosemite Sam");
+                    newItem.appendChild(textnode);
+                    var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+					
+				var tweety = document.createElement("input");
+                    tweety.type = "button";
+                    tweety.value = "Tweety Bird";
+                    tweety.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Tweety Bird");
+                    newItem.appendChild(textnode);
+                    var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+					
+				var lolaBunny = document.createElement("input");
+                    lolaBunny.type = "button";
+                    lolaBunny.value = "Lola Bunny";
+                    lolaBunny.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Lola Bunny");
+                    newItem.appendChild(textnode);
+                    var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+					
+				var michaelJordan = document.createElement("input");
+                    michaelJordan.type = "button";
+                    michaelJordan.value = "Michael Jordan";
+                    michaelJordan.addEventListener ("click", function() {
+                    var newItem = document.createElement("LI");
+                    var textnode = document.createTextNode("Michael Jordan");
+                    newItem.appendChild(textnode);
+                    var list = document.getElementById("selectPlayers");
+                    list.insertBefore(newItem, list.childNodes[0]);
+                    });
+					
+		var remove = document.createElement("input");
+                    remove.type = "button";
+                    remove.value = "Remove Last Player Added";
+                    remove.addEventListener ("click", function() {
+                    var list = document.getElementById("selectPlayers");
+                    list.removeChild(list.childNodes[0]);
+					});
+		document.getElementById('players').appendChild(bugsBunny);
+		document.getElementById('players').appendChild(daffyDuck);
+		document.getElementById('players').appendChild(yosemiteSam);
+		document.getElementById('players').appendChild(tweety);
+		document.getElementById('players').appendChild(lolaBunny);
+		document.getElementById('players').appendChild(michaelJordan);
+		document.getElementById('players').appendChild(remove);
+           }
+           
+            function game() {
+                if (selectPlayers < 5) {
+                    document.getElementById('outputDiv2').innerHTML = "Not enough, add at least 5 players to start the game.";
+                } else 	{
+                    document.getElementById('outputDiv2').innerHTML = "Yupii!!! - The Nerdlucks got scared and don't want to play!";
+                }
+            }
+       </script>
+    
+    
+</head>
+
+
+<body>
+        
+        <h1>DOM Manipulation Code Page</h1>
+	    <h4>In this page I'll cover the following topic: DOM Manipulation Using createElement, appendChild, insertBefore, removeChild.</h4>
+		
+		
+        <div class="background2">
+            <h2>Space Jam - Looney Tunes Basketball squad</h2>
+			
+         
+			<p>Here you can build the <strong>Looney Tunes Basketball squad</strong> for the game against The Nerdlucks, click the button "Add Players" to display all available players.
+		Then add 5 players to start the game.</p>
+		<br>
+         
+            <div id="addPlayer">
+                <button onclick="start()" id="button1">Add Player</button>
+            </div>
+            <div id="players"></div>
+            <br/>
+            <ul id="selectPlayers"></ul>
+        
+            <p>Ready for the Game?</p>
+            <button onclick="game()">Let's Start!</button><br>
+            <br><div id="outputDiv2"></div>
+        </div>
+    
+
+</body>
+
+</html>
