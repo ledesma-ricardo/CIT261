@@ -1,0 +1,154 @@
+{ "nbateams" :
+[
+  {
+    "abbreviation": "ATL",
+    "teamName": "Atlanta Hawks",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/atl.png"
+  },
+  {
+    "abbreviation": "BOS",
+    "teamName": "Boston Celtics",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/bos.png"
+  },
+  {
+    "abbreviation": "BKN",
+    "teamName": "Brooklyn Nets",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/bkn.png"
+  },
+  {
+    "abbreviation": "CHA",
+    "teamName": "Charlotte Hornets",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/cha.png"
+  },
+  {
+    "abbreviation": "CHI",
+    "teamName": "Chicago Bulls",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/chi.png"
+  },
+  {
+    "abbreviation": "CLE",
+    "teamName": "Cleveland Cavaliers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/cle.png"
+  },
+  {
+    "abbreviation": "DAL",
+    "teamName": "Dallas Mavericks",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/dal.png"
+  },
+  {
+    "abbreviation": "DEN",
+    "teamName": "Denver Nuggets",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/den.png"
+  },
+  {
+    "abbreviation": "DET",
+    "teamName": "Detroit Pistons",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/det.png"
+  },
+  {
+    "abbreviation": "GSW",
+    "teamName": "Golden State Warriors",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/gsw.png"
+  },
+  {
+    "abbreviation": "HOU",
+    "teamName": "Houston Rockets",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/hou.png"
+  },
+  {
+    "abbreviation": "IND",
+    "teamName": "Indiana Pacers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/ind.png"
+  },
+  {
+    "abbreviation": "LAC",
+    "teamName": "Los Angeles Clippers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/lac.png"
+  },
+  {
+    "abbreviation": "LAL",
+    "teamName": "Los Angeles Lakers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/lal.png"
+  },
+  {
+    "abbreviation": "MEM",
+    "teamName": "Memphis Grizzlies",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mem.png"
+  },
+  {
+    "abbreviation": "MIA",
+    "teamName": "Miami Heat",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mia.png"
+  },
+  {
+    "abbreviation": "MIL",
+    "teamName": "Milwaukee Bucks",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mil.png"
+  },
+  {
+    "abbreviation": "MIN",
+    "teamName": "Minnesota Timberwolves",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/min.png"
+  },
+  {
+    "abbreviation": "NOP",
+    "teamName": "New Orleans Pelicans",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/nop.png"
+  },
+  {
+    "abbreviation": "NYK",
+    "teamName": "New York Knicks",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/nyk.png"
+  },
+  {
+    "abbreviation": "OKC",
+    "teamName": "Oklahoma City Thunder",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/okc.png"
+  },
+  {
+    "abbreviation": "ORL",
+    "teamName": "Orlando Magic",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/orl.png"
+  },
+  {
+    "abbreviation": "PHI",
+    "teamName": "Philadelphia 76ers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/phi.png"
+  },
+  {
+    "abbreviation": "PHX",
+    "teamName": "Phoenix Suns",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/phx.png"
+  },
+  {
+    "abbreviation": "POR",
+    "teamName": "Portland Trail Blazers",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/por.png"
+  },
+  {
+    "abbreviation": "SAC",
+    "teamName": "Sacramento Kings",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/sac.png"
+  },
+  {
+    "abbreviation": "SAS",
+    "teamName": "San Antonio Spurs",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/sas.png"
+  },
+  {
+    "abbreviation": "TOR",
+    "teamName": "Toronto Raptors",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/tor.png"
+  },
+  {
+    "abbreviation": "UTA",
+    "teamName": "Utah Jazz",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/uta.png"
+  },
+  {
+    "abbreviation": "WAS",
+    "teamName": "Washington Wizards",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/was.png"
+  }
+]
+}
