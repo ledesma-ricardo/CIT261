@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>CIT 261 - AJAX-JSON FILE</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <script type="text/javascript" src="scripts/disney.js"></script>
+    </head>
+    <body onload = populateSelect();>
+        
+        <h1>CIT 261 - AJAX-JSON FILE</h1>
+
+        <p>
+            <input type="button" 
+                style="margin:10px 0;font:14px Verdana;" 
+                    onclick="populateSelect()" 
+                        value="Populate SELECT with JSON" />
+        </p>
+
+
+        <select id="sel" onchange="show(this)">
+            <option value="">-- Select --</option>
+        </select>
+
+
+
+
+        <div class="background2">
+        <h2>NBA Teams Logo</h2>
+        <div id="slideContainer">
+            <input type="range" value="0" min="0" max="30" class="slider" oninput="disneyJSON(this.value)" onload="disneyJSON(this.value)">
+        </div>
+        <br>
+        <div id="jsonTitle"></div>
+        <div id="jsonPic"></div>
+        </div>
+    </body>
+</html>
