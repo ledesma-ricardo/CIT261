@@ -124,3 +124,78 @@ input[type=text] {
 	position:relative;
 	top:1px;
 }
+
+div.center {
+  text-align: center;
+}
+
+.pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arena {
+  text-align: center;
+}
+
+
+
+ select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #6eebb0;
+  background-image: none;
+}
+
+.showNBAlogos {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+select {
+  width: 20%;
+  height: 20%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: rgb(247, 242, 242);
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.showNBAlogos::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #34495e;
+  pointer-events: none;
+} 
+/* Transition */
+.showNBAlogos:hover::after {
+  color: #f39c12;
+}
+.showNBAlogos::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+} 
