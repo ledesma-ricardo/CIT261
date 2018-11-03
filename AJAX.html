@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="nbateams.js"></script>
+    </head>
+    <body onload = populateSelect();>
+        <div class="center">
+        <h1>AJAX Topic Code Page</h1>
+        <h2>NBA Teams Logo and Arena</h2>
+        <h4>This SELECT Dropdown List use AJAX to get data from a JSON with the name, stadium name and logo of your favorite NBA Team</h4>
+        </div>
+        <br>
+            <select class="showNBAlogos" id="sel" onchange="nbaJSON(this.selectedIndex)">
+            <!-- <option value="">-- Select --</option> -->
+        </select>
+        <br>
+        <br>
+        <div class="arena" id="teamArena"></div>
+        <div class="pic" id="teamlogo"></div>
+        
+    </body>
+</html> 

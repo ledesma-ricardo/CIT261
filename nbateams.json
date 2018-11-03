@@ -1,0 +1,180 @@
+[{
+    "abbreviation": "ATL",
+    "teamName": "Atlanta Hawks",
+    "arena": "Philips Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/atl.png"
+  },
+  {
+    "abbreviation": "BOS",
+    "teamName": "Boston Celtics",
+    "arena": "TD Garden",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/bos.png"
+  },
+  {
+    "abbreviation": "BKN",
+    "teamName": "Brooklyn Nets",
+    "arena": "Barclays Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/bkn.png"
+  },
+  {
+    "abbreviation": "CHA",
+    "teamName": "Charlotte Hornets",
+    "arena": "Time Warner Cable Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/cha.png"
+  },
+  {
+    "abbreviation": "CHI",
+    "teamName": "Chicago Bulls",
+    "arena": "United Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/chi.png"
+  },
+  {
+    "abbreviation": "CLE",
+    "teamName": "Cleveland Cavaliers",
+    "arena": "Quicken Loans Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/cle.png"
+  },
+  {
+    "abbreviation": "DAL",
+    "teamName": "Dallas Mavericks",
+    "arena": "American Airlines Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/dal.png"
+  },
+  {
+    "abbreviation": "DEN",
+    "teamName": "Denver Nuggets",
+    "arena": "Pepsi Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/den.png"
+  },
+  {
+    "abbreviation": "DET",
+    "teamName": "Detroit Pistons",
+    "arena": "The Palace at Auburn Hills",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/det.png"
+  },
+  {
+    "abbreviation": "GSW",
+    "teamName": "Golden State Warriors",
+    "arena": "Oracle Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/gsw.png"
+  },
+  {
+    "abbreviation": "HOU",
+    "teamName": "Houston Rockets",
+    "arena": "Toyota Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/hou.png"
+  },
+  {
+    "abbreviation": "IND",
+    "teamName": "Indiana Pacers",
+    "arena": "Bankers Life Fieldhouse",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/ind.png"
+  },
+  {
+    "abbreviation": "LAC",
+    "teamName": "Los Angeles Clippers",
+    "arena": "Staples Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/lac.png"
+  },
+  {
+    "abbreviation": "LAL",
+    "teamName": "Los Angeles Lakers",
+    "arena": "Staples Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/lal.png"
+  },
+  {
+    "abbreviation": "MEM",
+    "teamName": "Memphis Grizzlies",
+    "arena": "FedEx Forum",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mem.png"
+  },
+  {
+    "abbreviation": "MIA",
+    "teamName": "Miami Heat",
+    "arena": "American Airlines Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mia.png"
+  },
+  {
+    "abbreviation": "MIL",
+    "teamName": "Milwaukee Bucks",
+    "arena": "Bradley Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/mil.png"
+  },
+  {
+    "abbreviation": "MIN",
+    "teamName": "Minnesota Timberwolves",
+    "arena": "Target Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/min.png"
+  },
+  {
+    "abbreviation": "NOP",
+    "teamName": "New Orleans Pelicans",
+    "arena": "Smoothie King Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/nop.png"
+  },
+  {
+    "abbreviation": "NYK",
+    "teamName": "New York Knicks",
+    "arena": "Madison Square Garden",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/nyk.png"
+  },
+  {
+    "abbreviation": "OKC",
+    "teamName": "Oklahoma City Thunder",
+    "arena": "Chesapeake Energy Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/okc.png"
+  },
+  {
+    "abbreviation": "ORL",
+    "teamName": "Orlando Magic",
+    "arena": "Amway Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/orl.png"
+  },
+  {
+    "abbreviation": "PHI",
+    "teamName": "Philadelphia 76ers",
+    "arena": "Wells Fargo Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/phi.png"
+  },
+  {
+    "abbreviation": "PHX",
+    "teamName": "Phoenix Suns",
+    "arena": "Talking Stick Resort Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/phx.png"
+  },
+  {
+    "abbreviation": "POR",
+    "teamName": "Portland Trail Blazers",
+    "arena": "Moda Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/por.png"
+  },
+  {
+    "abbreviation": "SAC",
+    "teamName": "Sacramento Kings",
+    "arena": "Sleep Train Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/sac.png"
+  },
+  {
+    "abbreviation": "SAS",
+    "teamName": "San Antonio Spurs",
+    "arena": "AT&T Centre",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/sas.png"
+  },
+  {
+    "abbreviation": "TOR",
+    "teamName": "Toronto Raptors",
+    "arena": "Air Canada Centre",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/tor.png"
+  },
+  {
+    "abbreviation": "UTA",
+    "teamName": "Utah Jazz",
+    "arena": "Vivint Smart Home Arena",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/uta.png"
+  },
+  {
+    "abbreviation": "WAS",
+    "teamName": "Washington Wizards",
+    "arena": "Verizon Center",
+    "picURL": "https://www.nba.com/.element/img/1.0/teamsites/logos/teamlogos_500x500/was.png"
+  }]
