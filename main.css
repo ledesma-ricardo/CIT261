@@ -15,7 +15,8 @@ h1, h2 {
 
 h2, h4 {
     
-    color:brown
+    color:#f80a0a;
+    text-shadow: 2px 2px #463f3f;
 }
 
 .testingBlock {
