@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+        
+       
+    </head>
+
+    <body>
+        
+        <script language="javascript" type="text/javascript">
+         // Receive an identifier of the element canvas and load the canvas
+         // Returns the context of the canvas or FALSE if it could not get
+        function validateCanvas(idCanvas) {
+        var element = document.getElementById(idCanvas);
+            if(element && element.getContext) {
+                var context = element.getContext('2d');
+            if(context) {
+                return context;
+                }
+            }
+            return FALSE;
+        }
+            window.onload = function()
+        {
+            // We received the element canvas
+            var board = validateCanvas('chessBoard');
+            if(board) {
+            // Change color to Black
+                board.fillStyle = '#000000';
+            // Draw a large rectangle
+                board.fillRect(0,0,420,420);
+                var siteX = 10;
+                var siteY = 10;
+            // Draw the squares White and Black overwriting the big square
+            for(var row = 1; row <= 8; row++) {
+                for(var column = 1 ; column <= 8; column++) {
+                    if((parseInt(column + row) % 2) != 0) {
+                    board.fillStyle = '#ffffff';}
+                    else {
+                    board.fillStyle = '#000000';}
+            // draw a rectangle
+                    board.fillRect(siteX,siteY,50,50);
+                    siteX += 50;
+                    }
+                siteX = 10;
+                siteY += 50;
+                }
+            }
+        }
+        </script>
+
+        <main>
+            
+        <h1>HTML5 Tags Code Page</h1>
+        <hr>
+        <h2>In this page I'll cover HTML5 Tags like Video, Audio, and Canvas.</h2>
+        <br>
+        <section id="action2" class="myVideo" preload="auto" width="380">
+            <div class="videoCont">
+                <h1>HTML5 Tag - Video: Light The World 2018</h1>
+                <div>
+                    <video class="videoDiv" width="500" controls preload="metadata">
+                        <source src="LightTheWorld.mp4" type="video/mp4">
+                    </video>
+                </div>
+           </div>
+           <br>
+              <br>
+                <div class="audioCont">
+                <h1>HTML5 Tag - Audio</h1>
+                <h2>Children's Songbook: A Child’s Prayer</h2>
+                    <audio controls>
+                        <source src="A Child’s Prayer.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            
+            <div class="canvasTag">
+                <h1>HTML5 Tag - Canvas</h1>
+                <p>This Chessboard was drawn using CANVAS tag and a Javascript function</p>
+                <canvas class="chess-canvas" id="chessBoard" width="420" height="420"></canvas>
+                </div>
+            </div>
+        </section>
+        </main>
+        <br>
+        <hr>
+        
+           <p><a href="index.html">Return to Home Page</a></p>
+     
+              <br>
+    
+        <footer>
+         <p>Created by Ricardo Ledesma 2018</p>
+        </footer>
+       
+        </body>
+
+</html>
