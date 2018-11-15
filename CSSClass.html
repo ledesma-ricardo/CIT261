@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="JavaScript.js"></script>
+	</head>
+  <body>
+        <style>
+                .head{
+                    font-size: 25px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: black;
+                    text-align: left;
+                }
+  
+        </style>        
+  <h1>CSS Class Properties</h1>
+  <hr>
+  <h2>In this page I'll cover Manipulating CSS Class Properties Using JavaScript.</h2>
+  <br>
+  <br>
+    <h1 class="head" id="id1">You can change my Color by clicking the Button</h1>
+    <button class="myButton" type="button" onclick="random_bg_color()">Random Color!</button>
+    <button class="myButton" type="button" onclick="resetStyle()">Reset Color!</button>
+    <br>
+    <br>    
+    <h1 class="head" id="id2">You can change my Font Family by clicking the Button</h1>
+    <button class="myButton" type="button" onclick="fontFamily()">Change Font Family!</button>
+    <button class="myButton" type="button" onclick="resetFamily()">Reset Font Family!</button>
+    <br>
+    <br>
+    <P class="head" id="id3">You can change my Font Size by clicking the Button</p>
+    <button class="myButton" type="button" onclick="fontSize()">Change Font Size!</button>
+    <button class="myButton" type="button" onclick="resetSize()">Reset Font Size!</button>
+   
+      <script type="text/javascript">
+        function random_bg_color() {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        document.getElementById('id1').style.color = bgColor;
+        }
+
+        function resetStyle() {
+        document.getElementById('id1').style.color = 'black';
+        }
+
+         function fontFamily() {
+        document.getElementById('id2').style.fontFamily = "Impact,Charcoal,sans-serif";
+        }
+        function resetFamily() {
+        document.getElementById('id2').style.fontFamily = "Arial, Helvetica, sans-serif";
+        }
+    
+        function fontSize() {
+        document.getElementById('id3').style.fontSize = "200%";
+        }
+        function resetSize() {
+        document.getElementById('id3').style.fontSize = "25px";
+        }
+    </script>
+
+    <br>
+    <br>
+   <p><a href="index.html">Return to Home Page</a></p>
+ 
+    <br>
+    <br>
+
+<footer>
+ <p>Created by Ricardo Ledesma 2018</p>
+
+</footer>
+  </body>
+</html>
