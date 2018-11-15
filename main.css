@@ -195,8 +195,40 @@ select::-ms-expand {
 .showNBAlogos:hover::after {
   color: #f39c12;
 }
+
 .showNBAlogos::after {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
 } 
+
+/* HTML5 Tags */
+.videoDiv {
+  margin: 1em auto;
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+video {
+  border-radius: 8px;
+}
+
+audio {
+  display: block;
+  margin: 1em auto;
+  position: relative;
+  max-width: 100%;
+  padding: 50px;
+}
+
+canvas{
+  border: 30px solid brown;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.canvasTag p {
+  text-align: center;
+}
