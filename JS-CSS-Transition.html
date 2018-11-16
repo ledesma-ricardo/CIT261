@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+ 
+
+ <style type="text/css">
+#box {
+    background: red;
+    width: 700px;
+    height: 100px;
+    border-radius: 12px;
+    margin: auto;
+    
+   
+    padding: 10px;
+}
+
+#wallpaper {
+    width: 500px;
+    opacity: 1;
+    top: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box1 {
+    width: 100px;
+    height: 120px;
+    background: #19f336;
+    text-align: center;
+    display: block;
+    border-radius: 12px;
+    border: 2px solid #8d0be4;
+
+}
+
+#box p {
+    
+    text-align: center; 
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#box1 p {
+     
+    font-weight: bold;
+}
+
+#buttons {
+    margin-left: 25%;
+    width: 100%;
+
+}
+
+.examples {
+
+    margin: auto;
+    width: 50%;
+}
+
+</style>
+
+ <script type="text/javascript">
+    function changeBackground (object, color) {
+        var element = document.getElementById(object);
+        element.style.transitionProperty ="background";
+        element.style.transitionDuration = "2.0s";
+        element.style.transitionTimingFunction = "linear";
+        element.style.transitionDelay = "1s";
+        element.style.background = color;
+}
+
+function hide (object) {
+        var wall = document.getElementById(object);
+        wall.style.transition="opacity 2s linear";
+        wall.style.opacity = 0;
+}
+
+function show (object) {
+        var wall = document.getElementById(object);
+        wall.style.transition="opacity 2s linear";
+        wall.style.opacity = 1;
+}
+
+function slicein (object) {
+
+    var element = document.getElementById(object);
+        element.style.transition="width 1.0s linear";
+        element.style.width = "600px";
+        element.addEventListener("click", function() {
+            sliceout (object);}, false);
+}
+
+function sliceout (object) {
+
+var element = document.getElementById(object);
+    element.style.transition="width 1.0s linear";
+    element.style.width = "100px";
+    element.addEventListener("click", function() {
+            slicein (object);}, false);
+}
+
+</script>
+</head>
+
+<body> 
+    <h1>CSS3 Transitions Code Page</h1>
+    <hr>
+    <h2>On this page you will find some examples of using Javascript to trigger CSS3 transitions.</h2>
+    <br>
+    <div class="examples">
+
+    <h2>EXAMPLE 1:</h2>
+
+    <div id="box">
+    <p>Javascript trigger my change color transition. Just click one button bellow!</p>
+    </div>
+    <br>
+    <div id="buttons">
+    <button class="myButton" onclick="changeBackground('box', 'blue')">Change to Blue</button>
+    <button class="myButton" onclick="changeBackground('box', 'green')">Change to Green</button>
+    <button class="myButton" onclick="changeBackground('box', 'red')">Reset</button>
+</div>
+<br>
+<h2>EXAMPLE 2:</h2>
+<h3>Place the mouse over the image to make it disappear and remove the mouse to make the image appear.</h3>
+<img onmouseover="hide('wallpaper')" onmouseout="show('wallpaper')" src="LDSWallpaper.jpg" id="wallpaper" alt="christus">
+<br>
+<h2>EXAMPLE 3:</h2>
+<br>
+<div id="box1" onclick="slicein('box1')">
+    <p>Click me to enlarge and click again to shrink!</p>
+</div>
+<br>
+</div>
+<br>
+<hr>
+
+   <p><a href="index.html">Return to Home Page</a></p>
+
+      <br>
+
+<footer>
+ <p>Created by Ricardo Ledesma 2018</p>
+</footer>
+</body>
+</html>
