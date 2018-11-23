@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>CIT 261 Mobile Application Development</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <script type="text/javascript" src="JS-Events.js"></script>
+  </head>
+  <body onload="init()">
+    <h1>JavaScript Events</h1>
+    <hr>
+    <h2>Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events.</h2>
+    <br>
+    <h2>Example 1</h2>
+     <p>For this demostration you can draw in this canvas object. 
+       I use <strong>mouseup</strong>, <strong>mousedown</strong>, <strong>mousemove</strong>, <strong>touchstart</strong> and <strong>touchmove</strong> 
+       events draw the line wherever you move your finger. You can click the button bellow to clear the draw.</p>
+    <canvas id="mycanvas" width="500" height="500"></canvas>
+    <br>
+    <button class="myButton" type="button" onclick="clearCanvas(canvas,ctx);">Clear Draw!</button>
+    <br>
+
+    <h2>Example 1</h2>
+    <p>You can change the text's color below by touching it with your finger. We use the <strong>Onclick</strong> event to call
+      a javascript function to random the text color. You can click the button bellow to reset to the original color.</p>
+    <p onclick="random_bg_color()" id="id1">Touch me to change my Color</p>
+    <button class="myButton" type="button" onclick="resetStyle()">Reset Color!</button>
+    <br>
+    <hr>
+    <br>
+   <p><a href="index.html">Return to Home Page</a></p>
+ 
+    <br>
+       
+<footer>
+ <p>Created by Ricardo Ledesma 2018</p>
+
+</footer>
+  </body>
+</html>
