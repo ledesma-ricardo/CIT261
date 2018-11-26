@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+    </head>
+    <body>
+    <style>
+			.container-float {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.avatar {
+				width: 200px;
+				height: 200px;
+				box-sizing: border-box;
+				border: 5px white solid;
+				border-radius: 50%;
+				overflow: hidden;
+				box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+				transform: translatey(0px);
+				animation: float 6s ease-in-out infinite;
+				img { width: 100%; height: auto; }
+			}
+
+			.content {
+				width: 100%;
+				max-width: 600px;
+				padding: 20px 40px;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+			@keyframes float {
+				0% {
+					box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+					transform: translatey(0px);
+				}
+				50% {
+					box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+					transform: translatey(-20px);
+				}
+				100% {
+					box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+					transform: translatey(0px);
+				}
+			}
+
+
+			.container-circle {
+				width: 100%;
+				height: 350px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+				position: relative;
+			}
+	
+			.circle {
+				border-radius: 50%;
+				background-color: green;
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				opacity: 0;
+				animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+			}
+	
+			.item {
+				z-index: 100;
+				padding: 5px;
+			}
+	
+			.item img {
+				width: 150px;
+			}
+
+			@keyframes scaleIn {
+			from {
+				transform: scale(.5, .5);
+				opacity: .5;
+			}
+			to {
+				transform: scale(2.5, 2.5);
+				opacity: 0;
+				}
+			}
+
+				.temples {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+			}
+
+			.temples img{
+				border: 1px solid #000;
+				border-radius: 3px;
+				box-shadow: 0 0 5px 0 hsla(0,0%,30%, .3);
+			}
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: relative;
+			}
+
+			li {
+				position: absolute;
+				left: 50%;
+				margin-left: -247px;
+				margin-top: 3%;
+			}
+			
+			li:nth-child(4) {
+				animation: xfade 16s 0s infinite;
+			}
+			li:nth-child(3) {
+				animation: xfade 16s 4s infinite;
+			}
+			li:nth-child(2) {
+				animation: xfade 16s 8s infinite;
+			}
+			li:nth-child(1) {
+				animation: xfade 16s 12s infinite;
+			}
+
+			@keyframes xfade{
+				17% {
+					opacity:1;
+				}
+				25% {
+					opacity:0;
+				}
+				92% {
+					opacity:0;
+				}
+			}
+			  </style> 
+
+<h1>CSS Class Properties</h1>
+ <hr>
+ <h2>In this page I'll cover Manipulating CSS Class Properties Using JavaScript.</h2>
+ <div class="container-float">
+		<div class="content">
+				<h3>Example 1: Moroni Angel's Floating animation with CSS </h3>
+			</div>
+	<div class="avatar">
+		<img src="https://png2.kisspng.com/20180616/erb/kisspng-angel-moroni-the-church-of-jesus-christ-of-latter-5b24a09aecdc87.0922975115291270669702.png" alt="moroni" height="200" width="200">
+	
+</div>
+<h3>Example 2: Kryptonite Radiation animation </h3>
+<div class="container-circle">
+		<div class="item">
+		  <img src="Kryptonite.png" />
+		</div>
+		<div class="circle" style="animation-delay: -3s"></div>
+		  <div class="circle" style="animation-delay: -2s"></div>
+		  <div class="circle" style="animation-delay: -1s"></div>
+		  <div class="circle" style="animation-delay: 0s"></div>
+</div>
+<div class="temples">
+		<h3>Example 3: Temple crossfade slideshow animation </h3>
+	<ul>
+		<li><img width="500" height="370" title="" alt="SantoDomingo" src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/santo-domingo-dominican-republic/1280x800/temples-santo-domingo-dominican-republic-638246-wallpaper.jpg" /></li>
+		<li><img width="500" height="370" title="" alt="Barranquilla" src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" /></li>
+		<li><img width="500" height="370" title="" alt="Concepcion" src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/concepcion-chile/2018/1280x800/01-Concepcion-Chile-Temple-2113673.jpg" /></li>   
+		<li><img width="500" height="370" title="" alt="Florida" src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/fort-lauderdale-florida/1280x800/fort-lauderdale-florida-temple-1220610-wallpaper.jpg" /></li>
+	</ul>
+	</div>
+</div>
+
+<hr>
+<br>
+<p><a href="index.html">Return to Home Page</a></p>
+<br>
+<br>
+<footer>
+<p>Created by Ricardo Ledesma 2018</p>
+</footer>
+</body>
+</html>
