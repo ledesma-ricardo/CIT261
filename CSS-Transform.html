@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+    <body>
+    <style>
+		h3 {
+			text-align: center;
+		}
+
+		ul{
+			width: 300px;
+			height: 300px;margin: 100px auto;border: 1px solid;list-style: none;
+			position: relative;
+			padding: 0;
+		}
+		ul li{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 300px;height: 300px;
+			transform-origin: left top;
+			-webkit-transition: transform 1s;
+			-o-transition: transform 1s;
+			transition: transform 1s;
+		}
+		
+		ul:hover li:nth-child(1){
+			transform: rotate(-30deg) scale(0.8,0.8);
+		}
+		ul:hover li:nth-child(2){
+			transform:rotate(50deg)  scale(0.8,0.8);
+		}
+		ul:hover li:nth-child(3){
+			transform:rotate(70deg) scale(0.8,0.8);
+		}
+
+
+		.wrapper {
+		width: 300px;
+		height: 300px;
+		margin: 100px auto;
+		perspective: 1200px;
+		}
+
+		.cube {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		cursor: pointer;
+		transform-style: preserve-3d;
+		transform-origin: center center;
+		animation: 4s shape1 linear infinite;
+		}
+
+		@keyframes shape1 {
+		0% {
+			transform: rotateY(0deg) rotateX(0deg);
+		}
+		100% {
+			transform: rotateY(360deg) rotateX(360deg);
+		}
+		}
+
+		.back-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		transform: translateZ(-150px);
+		}
+
+		.left-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		background: url("https://www.sideshowtoy.com/assets/products/903804-iron-man-mark-l-accessories/lg/marvel-avengers-infinity-war-iron-man-mark-l-accessories-sixth-scale-figure-hot-toys-903804-031.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 300px 300px;
+		transform: translateX(-150px) rotateY(90deg);
+		}
+
+		.right-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		background: url("https://imgc.allpostersimages.com/img/print/posters/avengers-infinity-war-thor-and-stormbreaker_a-G-15605542-13372582.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 300px 300px;
+		transform: translateX(150px) rotateY(90deg);
+		}
+
+		.top-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		background: url("http://cdn.wallpapersafari.com/62/0/H9GPmv.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 300px 300px;
+		transform: translateY(-150px) rotateX(90deg);
+		}
+
+		.bottom-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		background: url("https://i.ebayimg.com/images/i/142764439502-0-1/s-l1000.jpg");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 300px 300px;
+		transform: translateY(150px) rotateX(90deg);
+		}
+
+		.front-side {
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		border-radius: 2px;
+		text-align: center;
+		background: url("https://www.gijoeelite.com/thumbnail.asp?file=assets/images/giht-903595a.jpg&maxx=300&maxy=0");
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 300px 300px;
+		transform: translateZ(150px);
+		}
+
+</style> 
+
+<h1>CSS3 Transforms Code Page</h1>
+ <hr>
+ <h2>In this page I'll cover Manipulating CSS Class Properties Using JavaScript.</h2>
+ <br>
+ <h3>Example 1: Using transform-origin property Hover on the picture below to rotate them.</h3>
+ <div class="container"></div>
+ 		<ul>
+			<li>
+			  <img width="300" height="300" alt="blackpanter" src="http://www.theupost.org/wp-content/uploads/2018/03/2f9cc966e19d8bc2d56c5d5c83f37aab-750x450-300x300.jpg"/>
+			</li>
+			<li>
+			  <img width="300" height="300" alt="iroman" src="http://endlessfacts.com/upload/img/MuwLJ14397953842.jpg"/>
+			</li>
+			<li>
+			  <img width="300" height="300" alt="capitan" src="https://i1.sndcdn.com/artworks-000137600187-zns4mm-t500x500.jpg"/>
+			</li>
+		</ul>
+</div>
+<h3>Example 2: Using translate and rotate properties, I created the advengers 3D cube.</h3>
+<div class="wrapper">
+	<div class="cube">
+	  <div class="back-side"></div>
+	  <div class="left-side"></div>
+	  <div class="right-side"></div>
+	  <div class="top-side"></div>
+	  <div class="bottom-side"></div>
+	  <div class="front-side"></div>
+	</div>
+</div>
+<br>
+<hr>
+<br>
+<p><a href="index.html">Return to Home Page</a></p>
+<br>
+<br>
+<footer>
+<p>Created by Ricardo Ledesma 2018</p>
+</footer>
+</body>
+</html>
