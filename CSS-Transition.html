@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+		
+    </head>
+    <body>
+    <style>
+			
+
+.box {
+  width: 50%; 
+  margin: 0 auto 40px; 
+	position: relative;
+	text-align: center;
+}
+
+
+div, h2, img {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* code {font-size: 0.9em;display:inline-block;line-height:1.1;} */
+
+h2 {
+  text-shadow: 1px 1px 0 black;
+}
+.textshadow:hover {
+	font-size: xx-large;
+	text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black,
+							 6px 6px 0 black, 7px 7px 0 black, 8px 8px 0 black, 9px 9px 0 black, 10px 10px 0 black;
+}
+
+strong {
+margin-top: 50%;
+
+
+}
+.one, .two, .three {
+  border: 5px solid transparent;
+  width: 300px; 
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.one {
+  background-color: lightseagreen;
+}
+.one:hover {
+  border: 5px solid lightseagreen;
+  background-color: #F2EBD8;
+  border-top-left-radius: 200% 200px;
+  border-bottom-right-radius: 200% 200px;
+}
+.two {
+  background-color: #9F908F;
+}
+.two:hover {
+  border: 5px inset #9F908F;
+  background-color: #E0CABB;
+}
+.three {
+  background-color: #ffff00a6;
+  border: 5px solid 	limegreen;
+  outline: 5px solid transparent;
+}
+.three:hover {
+  outline: 5px solid black;
+  outline-offset: 5px;
+}
+.four {
+  width: 200px;
+  height: 100px;
+  background-color: lightpink;
+  margin: 0 auto;
+}
+.four:hover {
+  width: 500px;
+  height: 80px;
+  box-shadow: 0 25px 25px -20px rgba(0,0,0, .7);
+}
+.five {
+  width: 70px;
+  height: 50px;
+	/* background-color: salmon;
+	border: 5px solid 	limegreen; */
+  margin: 0 auto;
+  position: relative;
+  left: 50px;
+}
+.five:hover {
+  left: -200px;
+}
+.six {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  box-shadow: 
+    0 2px 4px rgba(0,0,0, .2),
+    0 -2px 4px rgba(0,0,0, .2);
+  background: url("https://www.affirmx.com/wp-content/uploads/2017/01/AdobeStock_77494336.jpeg");
+  background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 600px 700px;
+}
+.six:hover {
+	background-position: bottom center;
+	transition: 3s linear;
+	
+}
+.seven {
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://userscontent2.emaze.com/images/c114e41a-ebf2-4592-95a7-66d6af89fcc6/27bc5ccc442d99a87284a17444b5bc78.png");
+	background-repeat: no-repeat;
+	background-size: 400px 200px;
+}
+.seven:hover {
+	background-size: 800px 400px;
+}
+</style> 
+
+<h1>CSS3 Transitions Code Page</h1>
+ <hr>
+ <h2>In this page I'll cover Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (On :hover).</h2>
+ <br>
+ <div class="wrap">
+ <div class="box">
+		<h3>Example 1: Hover the text below to change font-size and Text-shadow</h3>
+	 <h2 class="textshadow">Font-size and Text-shadow</h2>
+ </div>
+ <div class="box">
+		<h3>Example 2: Hover the box below to change border-color, border-radius and background-color</h3>
+	 <div class="one"></div>
+	</div>
+ <div class="box">
+		<h3>Example 3: Hover the box below to change border-style and background-color</h3>
+	 <div class="two"></div>
+	</div>
+ <div class="box">
+		<h3>Example 4: Hover the box below to change outline-color and outline-offset</h3>
+	 <div class="three"></div>
+	</div>
+ <div class="box">
+		<h3>Example 5: Hover the box below to change width, height and box-shadow</h3>
+	 <div class="four"></div>
+	</div>
+ <div class="box">
+		<h3>Example 6: Hover the box below to change position</h3>
+	 <div class="five">
+			<img width="300" height="100" alt="arrow" src="https://www.freeiconspng.com/uploads/red-arrow-left-pointing-5.png"/>
+	 </div>
+	</div>
+	<br>
+  <div class="box">
+		<h3>Example 7: Hover the picture below to change background-position property</h3>
+	 <div class="six"></div>
+	</div>
+ <div class="box">
+		<h3>Example 8: Hover the picture below to change background-size property</h3>	
+	<div class="seven"></div>
+	</div>
+ </div>
+
+
+<hr>
+<br>
+<p><a href="index.html">Return to Home Page</a></p>
+<br>
+<br>
+<footer>
+<p>Created by Ricardo Ledesma 2018</p>
+</footer>
+</body>
+</html>
