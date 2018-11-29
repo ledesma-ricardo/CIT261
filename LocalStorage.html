@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+<body>
+	
+	
+	<h1>Local Storage Code Page</h1>
+	<hr>
+	<h2>In this page I'll cover Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects.</h2>
+	<br>
+	<h3>Example 1: Input the required informatio, click the Save Data button then the Retrieve Data button to get data stored in localStorage</h3>
+	<div class="wrapper">
+		<strong>First Name: </strong><input type="text" id="text01"><br>
+		<strong>Last Name:  </strong><input type="text" id="text02"><br><br>
+		
+		<button class="myButton" onclick="saveData()">Save Data</button> <button class="myButton" onclick="getSavedData()">Retrieve Data</button><br><br>
+		
+		<div id="output01"></div><br>
+		<div id="output02"></div><br>
+	
+
+	<h3>Example 2: Input a series of numbers or words, click the submit button to see each the data stored and retrieved from localStorage in differents types of output.</h3>
+	
+		<input id="input" type="text">
+		<button class="myButton" onclick="localRetrieve()">Submit</button><br>
+		
+		<p><strong>Output as a String:</strong></p>
+		<textarea id="outputString"></textarea>
+		
+		<p><strong>Output as an Array:</strong></p>
+		<textarea id="outputArray"></textarea>
+		
+		<p><strong>Output as an Associative array:</strong></p>
+		<textarea id="outputAsArray"></textarea>
+		
+		<p><strong>Output as an Object:</strong></p>
+		<textarea id="outputObject"></textarea>
+	</div>
+
+	<script type="text/javascript">
+
+	//EXAMPLE 1
+		function saveData() 
+		{
+			if (typeof(Storage) !== "undefined") {
+				// Store
+					localStorage.setItem("firstname", document.getElementById("text01").value);
+				localStorage.setItem("lastname", document.getElementById("text02").value);
+			} else {
+				document.getElementById("output01").innerHTML = "Sorry, your browser does not support Web Storage...";
+			}
+		}
+		
+		function getSavedData() 
+		{
+			if (typeof(Storage) !== "undefined") {
+				// Retrieve
+				document.getElementById("output01").innerHTML = localStorage.getItem("firstname");
+				document.getElementById("output02").innerHTML = localStorage.getItem("lastname");
+			} else {
+				document.getElementById("output01").innerHTML = "Sorry, your browser does not support Web Storage...";
+			}
+		}
+			
+	//EXAMPLE 2
+	function simple(input) {
+		var outputString = document.getElementById("outputString");
+		localStorage.setItem("inputString", input);
+	}
+
+	function array(arr) {
+		var outputArray = document.getElementById("outputArray");
+		localStorage.setItem("inputArray", arr);
+	}
+
+	function associative(arr) {
+		var outputAsArray = document.getElementById("outputAsArray");
+		var asArr = {};
+		for (var i = 0; i < arr.length; i++) {
+			asArr[i + 1] = arr[i];
+		}
+		asArr = JSON.stringify(asArr);
+		localStorage.setItem("inputAsArray", asArr);
+	}
+
+	function localRetrieve() {
+		var input = document.getElementById("input").value;
+		var arr = input.split(" ");
+		simple(input);
+		array(arr);
+		associative(arr);
+		output();
+	}
+
+	function output() {
+		document.getElementById("outputString").innerHTML = localStorage.getItem("inputString");
+
+		document.getElementById("outputArray").innerHTML = localStorage.getItem("inputArray");
+
+		var temp = localStorage.getItem("inputAsArray");
+		for (var i in temp) {
+			document.getElementById("outputAsArray").innerHTML += temp[i] + " ";
+		}
+
+		var tempO = localStorage.getItem("inputAsArray");
+		tempO = JSON.parse(tempO);
+		for (var y in tempO) {
+			document.getElementById("outputObject").innerHTML += tempO[y] + " ";
+		}
+	}
+	</script>
+<hr>
+<br>
+<p><a href="index.html">Return to Home Page</a></p>
+<br>
+<br>
+<footer>
+<p>Created by Ricardo Ledesma 2018</p>
+</footer>
+</body>
+</html>
