@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>CIT 261 Mobile Application Development</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+<body>
+	<h1>JavaScript Objects Code Page</h1>
+	<hr>
+	<h2>In this page I'll cover Object Creation Functions, Inheritance, Properties, Methods, Instantiation.</h2>
+	<br>
+       
+        
+            <div class="main_content">
+                    <h3><b>Enter the required information to create your own Basketball Dream-Team:</b></h3>
+                    <fieldset>
+                        <div id="player_input">
+                            <input type="text" id="player_fname" placeholder="Fisrt Name"><br>
+                            <input type="text" id="player_lname" placeholder="Last Name"><br>
+                            <input type="text" id="player_team" placeholder="Original Team"><br>
+                            <button class="myButton" onclick="addPlayer()" id="button_add_player">Add Player</button>
+                        </div>
+                    </fieldset>
+				
+                    <h3><b>Your Basketball Dream-Team:</b></h3>
+                    <fieldset>
+                        <div id="div_team">&nbsp;</div>
+                        <p>&nbsp;</p>
+                        <div id="player_description">&nbsp;</div>
+                    </fieldset>
+                
+            </div>
+		
+		<script type="text/javascript">
+			// Array to contain the players
+			var players = [];
+	
+			// Create a new object called player.
+			function player() {
+				this.fname = document.getElementById('player_fname').value;
+				this.lname = document.getElementById('player_lname').value;
+				this.team = document.getElementById('player_team').value;
+				this.description = function() {
+					return "Fisrt Name: " + this.fname + "<br />" +
+						"Last Name: " + this.lname + "<br />" +
+						"Original Team: " + this.team + "<br />";
+				};
+			}   
+				
+				// Add a team to the array, then clear the input fields.
+				function addPlayer () {
+					//create the new player object
+					players.push(new player());
+					
+					//Create the First Player
+					if (players.length == 1) {
+						var b = document.createElement("BUTTON");
+						var c = document.createTextNode("Point Guard");
+						b.appendChild(c);
+						b.addEventListener("click", function() { getplayers(1); });
+						document.getElementById('div_team').appendChild(b);
+					}
+					//Create the Second Player
+					else if (players.length == 2) {
+						var b = document.createElement("BUTTON");
+						var c = document.createTextNode("Shooting Guard");
+						b.appendChild(c);
+						b.addEventListener("click", function() { getplayers(2); });
+						document.getElementById('div_team').appendChild(b);
+					}
+					//Create the Third Player
+					else if (players.length == 3) {
+						var b = document.createElement("BUTTON");
+						var c = document.createTextNode("Small Forward");
+						b.appendChild(c);
+						b.addEventListener("click", function() { getplayers(3); });
+						document.getElementById('div_team').appendChild(b);
+					}
+					//Create the Fourth Player
+					else if (players.length == 4) {
+						var b = document.createElement("BUTTON");
+						var c = document.createTextNode("Power Forward");
+						b.appendChild(c);
+						b.addEventListener("click", function() { getplayers(4); });
+						document.getElementById('div_team').appendChild(b);
+					}
+					//Create the Fiveth Player
+					else if (players.length == 5) {
+						var b = document.createElement("BUTTON");
+						var c = document.createTextNode("Center");
+						b.appendChild(c);
+						b.addEventListener("click", function() { getplayers(5); });
+						document.getElementById('div_team').appendChild(b);
+					
+					//clear out the elements that allow us to input new players. Max out the players at 5
+						document.getElementById('player_input').innerHTML = '';
+						return;
+					}
+					//clear out the input elemnts so that the next team is ready
+					document.getElementById('player_fname').value='';
+					document.getElementById('player_lname').value='';
+					document.getElementById('player_team').value='';
+				}
+						
+				function getplayers(number) {
+					document.getElementById('player_description').innerHTML = players[number-1].description();
+				}
+			</script>
+		<hr>
+		<br>
+		<p><a href="index.html">Return to Home Page</a></p>
+		<br>
+		<br>
+		<footer>
+		<p>Created by Ricardo Ledesma 2018</p>
+		</footer>
+		</body>
+		</html>
