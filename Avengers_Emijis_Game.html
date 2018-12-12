@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Avengers Emojis Card Game</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="CSS/memory_game.css" />
+    <script src="JS/memory_game.js"></script>
+    <link href="https://db.onlinewebfonts.com/c/44a21eecd860f09edafc460507831238?family=The+Avengers" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Racing Sans One' rel='stylesheet'>
+</head>
+<body>  
+
+    <div class="container">
+    <section class="poster-content">
+    <header>
+        <h1>Avengers</h1>
+        <h2>🎮 Emojis Card Game 🎮</h2>
+    </header>
+    </section>
+    <section class="score-panel">
+    <p>
+        <span>Moves: </span><span id="moves">0</span><span> | Time: </span>
+        <span id="timer">0</span> <span>secs | </span>
+        <button class="myButton" id="restart" ontouchend="clearInterval(nowTime); newBoard();" onclick="clearInterval(nowTime); newBoard();">Restart</button>
+    </p>
+    </section>
+    <div class="flip3d" id="memory_board"></div>
+    </div>
+
+</body>
+<br>
+<footer>
+    <div class="divfooter">
+    <p>Created by Ricardo Ledesma @2018</p>
+    </div>
+    </footer>
+</html>
